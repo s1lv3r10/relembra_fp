@@ -1,0 +1,99 @@
+.hero {
+    position: relative;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('../img/latinhasfp.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: 1;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+
+.card-custom {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card-custom:hover {
+    transform: scale(1.02);
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-theme .navbar {
+    background-color: #1e1e1e;
+}
+
+.dark-theme .navbar .nav-link,
+.dark-theme .navbar .navbar-brand {
+    color: #e0e0e0;
+}
+
+.dark-theme .navbar-nav .nav-item .nav-link:hover {
+    color: #cccccc;
+}
+
+.dark-theme .card-custom {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.dark-theme .btn {
+    border-color: #444;
+}
+
+.dark-theme .btn-outline-primary {
+    color: #90caf9;
+    border-color: #90caf9;
+}
+
+.dark-theme .btn-outline-warning {
+    color: #ffcc80;
+    border-color: #ffcc80;
+}
+
+.dark-theme .btn-outline-success {
+    color: #a5d6a7;
+    border-color: #a5d6a7;
+}
+
+.dark-theme .btn-outline-info {
+    color: #81d4fa;
+    border-color: #81d4fa;
+}
+
+.dark-theme .btn-outline-danger {
+    color: #ef9a9a;
+    border-color: #ef9a9a;
+}
+
+
+#toggleTheme i {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+body.dark-theme #toggleTheme i {
+    color: #f1f1f1;
+}
+
