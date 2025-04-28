@@ -1,0 +1,23 @@
+create database `SDSTCC`;
+use `SDSTCC`;
+
+Create Table `usuario`(
+	id_user INT AUTO_INCREMENT PRIMAY KEY,
+	em_user int,
+	nome_user varchar(150),
+	usuario_user varchar(150),
+	senha_user varchar(300),
+	foto_user varchar(200),
+);
+
+Create Tabe `Midias`(
+	id_md INT AUTO_INCREMENT PRIMAY KEY,
+	em_md int,
+	midia_md,
+	tipo_md,
+	ano_mds,
+	evento_md,
+	#requisicao foreign key,
+);
+
+Create Table 
