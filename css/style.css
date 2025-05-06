@@ -115,16 +115,17 @@ body {
     font-family: 'FenomenSlab-Book', sans-serif;
 }
 
+
 .custom-navbar {
-    background-color: white;
+    background-color: #b80404;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    font-family: 'Segoe UI', sans-serif;
-  }
+    font-family: 'FenomenSlab-Book', sans-serif;
+}
   
   .custom-navbar .nav-link {
-    color: #b40000 !important; /* Vermelho Etec */
+    color: #ffffff !important; /* Vermelho Etec */
     font-weight: 500;
     padding: 0.5rem 1rem;
     transition: color 0.2s ease;

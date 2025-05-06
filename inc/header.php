@@ -7,9 +7,7 @@
         <link rel="stylesheet" href="<?php echo BASEURL; ?>css/style.css">
         <meta name="description" content="TCC">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="<?php echo BASEURL; ?>img/RFP.ico" type="image/x-icon">
-
-        <!-- Bootstrap CSS -->
+        <link rel="icon" href="<?php echo BASEURL; ?>img/iconesite.ico" type="image/x-icon">
         <link rel="stylesheet" href="<?php echo BASEURL; ?>css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo BASEURL; ?>css/style.css">
         <link rel="stylesheet" href="<?php echo BASEURL; ?>css/awesome/all.min.css">
@@ -22,14 +20,14 @@
             .btn-light {
                 background-color: #f8d7da;
                 border-color: rgb(125, 125, 125);
-                color: #721c24;
+                color:rgb(255, 255, 255);
             }
 
             header, #actions {
                 margin-top: 10px;
             }
             .navbar {
-                background-color: rgb(255, 255, 255);
+                background-color: #b80404;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
             .navbar .navbar-brand,
@@ -37,7 +35,7 @@
                 color: #000;
             }
             .navbar-nav .nav-item .nav-link:hover {
-                color: rgb(100, 100, 100);
+                color: rgb(0, 0, 0);
             }
         </style>
     </head>
@@ -47,7 +45,8 @@
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="cps-logo.png" alt="Logo" width="40"> Relembra FP
+    <a href="<?php echo BASEURL; ?>index.php"><img src="<?php echo BASEURL; ?>img/logosite.png" alt="Logo" width="40"></a>
+
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -55,13 +54,14 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-volleyball"></i> Esportivas</a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-children"></i> Filantrópicas</a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-masks-theater"></i> Culturais</a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Login</a></li>
-      </ul>
-    </div>
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item"><a class="nav-link" href="<?php echo BASEURL; ?>esportiva/index.php"><i class="fa-solid fa-volleyball"></i> Esportivas</a></li>
+    <li class="nav-item"><a class="nav-link" href="<?php echo BASEURL; ?>filantropica/index.php"><i class="fa-solid fa-children"></i> Filantrópicas</a></li>
+    <li class="nav-item"><a class="nav-link" href="<?php echo BASEURL; ?>cultural/index.php"><i class="fa-solid fa-masks-theater"></i> Culturais</a></li>
+    <li class="nav-item"><a class="nav-link" href="<?php echo BASEURL; ?>inc/login.php"><i class="fa-solid fa-users"></i> Login</a></li>
+  </ul>
+</div>
+
   </div>
 </nav>
 
