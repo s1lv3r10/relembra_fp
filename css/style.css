@@ -1,3 +1,4 @@
+
 .hero {
     position: relative;
     color: white;
@@ -97,3 +98,48 @@ body.dark-theme #toggleTheme i {
     color: #f1f1f1;
 }
 
+@font-face {
+    font-family: 'FenomenSlab-Book';
+    src: url('../inc/font/Fenomen Slab SCN Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FenomenSlab-Bold';
+    src: url('../inc/font/Fenomen Slab SCN Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    font-family: 'FenomenSlab-Book', sans-serif;
+}
+
+.custom-navbar {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .custom-navbar .nav-link {
+    color: #b40000 !important; /* Vermelho Etec */
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #333 !important; /* Cinza escuro no hover */
+  }
+  
+  .custom-navbar .navbar-brand {
+    font-weight: bold;
+    color: #000 !important;
+  }
+  
+  .navbar-toggler {
+    border-color: #ccc;
+  }
+  

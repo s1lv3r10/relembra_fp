@@ -7,7 +7,7 @@
 ?>
 
 <div class="hero rounded text-center">
-    <h1 class="display-5">Centro de Memória da Escola</h1>
+    <h1 class="display-5">Relembra FP</h1>
     <p class="lead">Conheça a história, os campeões e os momentos inesquecíveis da nossa escola.</p>
 </div>
 

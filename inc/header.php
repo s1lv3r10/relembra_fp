@@ -44,68 +44,27 @@
 
     <body>
 
-        <nav class="navbar navbar-expand-xxl navbar-light fixed-top">
-            <div class="container-fluid">
-                <div class="d-flex align-items-center">
-                    <a class="navbar-brand me-2" href="<?php echo BASEURL; ?>">
-                        <i class="fa-solid fa-house-chimney"></i>
-                    </a>
-                    <a class="nav-link p-0" href="#" id="toggleTheme" title="Alternar tema">
-                        <i class="fa-solid fa-circle-half-stroke" id="themeIcon"></i>
-                    </a>
-                </div>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="cps-logo.png" alt="Logo" width="40"> Relembra FP
+    </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-           
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="navbarEsportivas">
-                                <i class="fa-solid fa-volleyball"></i> Esportivas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="navbarFilantropicas">
-                                <i class="fa-solid fa-children"></i> Filantrópicas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="navbarCulturais">
-                                <i class="fa-solid fa-masks-theater"></i> Culturais
-                            </a>
-                        </li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                        <?php if (isset($_SESSION['user'])) : ?>
-                            <?php if ($_SESSION['user'] == "admin") : ?>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUsuarios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-user-lock"></i> Usuários
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="<?php echo BASEURL; ?>usuarios"><i class="fa-solid fa-user-lock"></i> Gerenciar Usuários</a></li>
-                                        <li><a class="dropdown-item" href="<?php echo BASEURL; ?>usuarios/add.php"><i class="fa-solid fa-user-tie"></i> Novo Usuário</a></li>
-                                    </ul>
-                                </li>
-                            <?php endif; ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?php echo BASEURL; ?>inc/logout.php">
-                                    Bem-vindo <?php echo $_SESSION['user']; ?>! <i class="fa-solid fa-person-walking-arrow-right"></i> Desconectar
-                                </a>
-                            </li>
-                        <?php else : ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?php echo BASEURL; ?>inc/login.php">
-                                    <i class="fa-solid fa-users"></i> Login
-                                </a>
-                            </li>
-                        <?php endif; ?>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-volleyball"></i> Esportivas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-children"></i> Filantrópicas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-masks-theater"></i> Culturais</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
         <main class="container">
         <script>
