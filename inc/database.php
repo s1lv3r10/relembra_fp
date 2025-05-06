@@ -7,7 +7,7 @@
 		$username = "root";
 		$password = "";
 		try {
-			$conn = new PDO("mysql:host=$servername;dbname=wda_crud", $username, $password);
+			$conn = new PDO("mysql:host=$servername;dbname=sds_tcc", $username, $password);
 			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			// if($conn){
 			// 	echo "conexao efetuada";

@@ -1,7 +1,7 @@
 <?php
 
 	/** O nome do banco de dados*/
-	define('DB_NAME', 'wda_crud');
+	define('DB_NAME', 'sds_tcc');
 
 	/** Usuário do banco de dados MySQL */
 	define('DB_USER', 'root');
@@ -18,7 +18,7 @@
 		
 	/** caminho no server para o sistema */
 	if ( !defined('BASEURL') )
-		define('BASEURL', '/crud-bootstrap-php/');
+		define('BASEURL', '/relembra_fp/');
 		
 	/** caminho do arquivo de banco de dados */
 	if ( !defined('DBAPI') )

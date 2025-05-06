@@ -56,6 +56,41 @@
                 </div>
             </div>
 
+            <div class="container text-center mt-5">
+                <h2 class="mb-4">Categorias da Gincana</h2>
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="fa-solid fa-hands-helping fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">Filantrópica</h5>
+                                <a href="filantropica/index.php" class="btn btn-outline-primary">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="fa-solid fa-theater-masks fa-3x text-warning mb-3"></i>
+                                <h5 class="card-title">Cultural</h5>
+                                <a href="cultural/index.php" class="btn btn-outline-warning">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <i class="fa-solid fa-futbol fa-3x text-success mb-3"></i>
+                                <h5 class="card-title">Esportiva</h5>
+                                <a href="esportiva/index.php" class="btn btn-outline-success">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <?php if (isset($_SESSION['user']) && $_SESSION['user'] == "admin") : ?>
                 <div class="col-md-6 col-lg-3">
                     <div class="card card-custom text-center">
