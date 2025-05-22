@@ -54,6 +54,35 @@ CREATE TABLE `midia` (
 -- --------------------------------------------------------
 
 --
+-- Estrutura para tabela `curtidas`
+--
+
+CREATE TABLE `curtidas` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `id_md` INT NOT NULL, -- ID da mídia
+  `ip_user` VARCHAR(50), -- IP ou algo identificador
+  `data` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (`id_md`) REFERENCES `midia`(`id_md`)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `comentários`
+--
+
+CREATE TABLE `comentarios` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `id_md` INT NOT NULL,
+  `comentario` TEXT NOT NULL,
+  `ip_user` VARCHAR(50),
+  `data` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (`id_md`) REFERENCES `midia`(`id_md`)
+);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura para tabela `noticias`
 --
 

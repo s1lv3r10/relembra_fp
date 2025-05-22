@@ -21,7 +21,7 @@
 
         <!-- Ano 2023 -->
         <div class="col-md-3">
-            <a href="esportiva2023.php" class="btn btn-outline-danger btn-lg w-100 py-3 rounded-4">Gincana 2023</a>
+            <a href="2023/esportiva2023.php" class="btn btn-outline-danger btn-lg w-100 py-3 rounded-4">Gincana 2023</a>
         </div>
     </div>
 </div>
